@@ -1,3 +1,24 @@
+<!-- Metadata Facebook -->
+<meta expr:content='data:blog.title' property='og:site_name'/>
+<meta expr:content='data:blog.pageTitle' property='og:title'/>
+<meta content='article' property='og:type'/>
+<meta expr:content='data:blog.url' property='og:url'/>
+<meta content='699446530074617' property='fb:app_id'/>
+
+<!-- Metadata Twitter -->
+<meta name='twitter:card' value='summary'/>
+<meta expr:content='data:blog.pageTitle' name='twitter:title'/>
+<meta content='@publisher_handle' name='twitter:site'/>
+<meta content='@author_handle' name='twitter:creator'/>
+
+<!-- Google Authorship and Publisher Markup -->
+<link href='https://plus.google.com/[NAME-AUTHOR]/posts' rel='author'/>
+<link href='https://plus.google.com/+NAME-PAGE' rel='publisher'/>
+
+<!-- Key words -->
+<meta content='Get New PC Games, Softwares, Mp3 Songs, Videos, Free PSD Files and everythine' name='description'/>
+<meta content='Pc Games, Softwares, Mp3 Songs, Videos Songs, PSD Files,' name='keywords'/>
+
 <!-- SEO Meta Tag -->
 <b:if cond='data:blog.homepageUrl == data:blog.url'><meta expr:content='data:blog.title' name='keywords'/></b:if>    
 <b:if cond='data:blog.pageType == &quot;item&quot;'><meta expr:content='data:blog.pageName' name='keywords'/></b:if>
