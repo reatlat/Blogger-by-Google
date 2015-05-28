@@ -1,0 +1,29 @@
+#AND
+ 
+<b:if cond='data:blog.pageType == "index"'>
+  <b:if cond='data:blog.searchQuery'>
+    <!--search_page AND index_page-->
+  </b:if>
+</b:if>
+ 
+ 
+#OR
+ 
+<b:if cond='data:blog.url == data:blog.canonicalHomepageUrl + &quot;p/foo.html&quot;'> 
+  <!-- static_site foo OR static_site bar -->
+      <b:else/>
+<b:if cond='data:blog.url == data:blog.canonicalHomepageUrl + &quot;p/bar.html&quot;'> 
+  <!-- static_site foo OR static_site bar -->
+   </b:if>
+</b:if>
+ 
+ 
+#NOT
+ 
+<b:if cond='data:blog.pageType != "index"'>
+  <!-- all pages NOT index pages -->
+</b:if>
+ 
+<b:if cond='data:blog.url != data:blog.homepageUrl'> 
+  <!-- all pages NOT homepage -->
+</b:if>
