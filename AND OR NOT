@@ -28,7 +28,30 @@
   <!-- all pages NOT homepage -->
 </b:if>
 
+
 #Archive page
+
 <b:if cond='data:blog.pageType == "archive"'>
   <!--archive_Page-->
 </b:if>
+
+
+#Error page
+
+<b:if cond='data:blog.pageType == "error_page"'>
+  <!-- all error pages-->
+</b:if>
+
+
+#Index page
+
+<b:if cond='data:blog.pageType == "index"'>
+  <!-- all index pages -->
+</b:if>
+ 
+<b:if cond='data:blog.url == data:blog.homepageUrl'> 
+  <!-- only homepage -->
+</b:if>
+
+
+#
