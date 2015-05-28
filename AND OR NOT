@@ -86,3 +86,12 @@
 </b:if>
 
 
+#Static page
+
+<b:if cond='data:blog.pageType == "static_page"'>
+  <!-- all static pages -->
+</b:if>
+ 
+<b:if cond='data:blog.url == data:blog.canonicalHomepageUrl + "p/foo.html"'> 
+  <!-- a specific static page with name 'foo' -->
+</b:if>
