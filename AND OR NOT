@@ -54,4 +54,35 @@
 </b:if>
 
 
-#
+#Item page
+<b:if cond='data:blog.pageType == "item"'>
+  <!-- all item pages -->
+</b:if>
+ 
+<b:if cond='data:blog.url == data:blog.canonicalHomepageUrl + "2014/08/foo.html"'> 
+  <!-- a item page from august 2014 with post-title 'foo'-->
+</b:if>
+
+
+#Lable page
+
+<b:if cond='data:blog.searchLabel'>
+  <!-- all label pages -->
+</b:if>
+ 
+<b:if cond='data:blog.searchLabel == "foo"'>
+  <!-- for label 'foo' -->
+</b:if>
+
+
+#Search page
+
+<b:if cond='data:blog.searchQuery'>
+    <!-- all search pages -->
+</b:if>
+ 
+<b:if cond='data:blog.searchQuery == "foo"'>
+  <!-- for query 'foo' -->
+</b:if>
+
+
